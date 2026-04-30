@@ -1,0 +1,114 @@
+:root {
+  --bg-color: #fafafa;
+  --text-color: #111517;
+  --card-bg: #ffffff;
+}
+
+body.dark-mode {
+  --bg-color: #2b3945; 
+  --text-color: #ffffff;
+  --card-bg: #202c37;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  transition: 0.3s;
+}
+
+header {
+  background-color: var(--card-bg);
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+.in {
+  padding: 18px 30px;
+  width: 450px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.abd {
+  position: relative;
+  width: 200px;
+  cursor: pointer;
+}
+
+.cbd {
+  background-color: var(--card-bg);
+  padding: 18px 24px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.davlatlar {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background-color: var(--card-bg);
+  border-radius: 5px;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  display: none; 
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.davlatlar.active {
+  display: block;
+}
+
+.davlatlar li {
+  padding: 10px 24px;
+  transition: 0.2s;
+}
+
+.davlatlar li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode .davlatlar li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
