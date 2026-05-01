@@ -20,22 +20,25 @@
     <main class="container">
       <div class="search-bar">
         <input class="in" type="text" placeholder="Search for a country…" />
-         <div class="abd">
-        <div class="cbd" id="cbd">
-          <span id="region">Filter by Region</span>
-          <span class="arrow">v</span>
+        <div class="abd">
+          <div class="cbd" id="cbd">
+            <span id="region">Filter by Region</span>
+            <span class="arrow">v</span>
+          </div>
+          <ul class="davlatlar" id="davlatlar">
+            <li data-value="Africa">Africa</li>
+            <li data-value="America">America</li>
+            <li data-value="Asia">Asia</li>
+            <li data-value="Europe">Europe</li>
+            <li data-value="Oceania">Oceania</li>
+          </ul>
         </div>
-        <ul class="davlatlar" id="davlatlar">
-          <li data-value="Africa">Africa</li>
-          <li data-value="America">America</li>
-          <li data-value="Asia">Asia</li>
-          <li data-value="Europe">Europe</li>
-          <li data-value="Oceania">Oceania</li>
-        </ul>
       </div>
-      </div>
-     
     </main>
-    <script src="./app.js"></script>
+
+    <div class="country-list container"></div>
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="main.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

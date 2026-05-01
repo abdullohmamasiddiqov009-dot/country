@@ -18,6 +18,12 @@ body {
   transition: 0.3s;
 }
 
+.container{
+  width: 100%;
+  min-width: 1280px;
+  margin: auto 0px;
+}
+
 header {
   background-color: var(--card-bg);
   padding: 20px 0;
@@ -111,4 +117,26 @@ header .container {
 
 body.dark-mode .davlatlar li:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+.country-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 74px;
+  margin-bottom: 44px;
+}
+
+.country{
+  width: 264px;
+  margin-top: 48px;
+  background-color: var(--bg-color);
+  border-radius: 16px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  img{
+    margin-bottom: 10px;
+  }
+}
+
+.country-intro{
+  margin-left: 24px;
+  padding-bottom: 30px;
 }
